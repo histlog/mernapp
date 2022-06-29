@@ -18,10 +18,10 @@ const App = () => (
       <Navbar></Navbar>
       <Route path='/' element={<Landing />} />
       <section className='container'>
-        <Routes>
+        <Switch>
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
-        </Routes>
+        </Switch>
       </section>
     </Fragment>
   </Router>
